@@ -8,10 +8,10 @@
 #define ML_IN1 14 //motor4
 #define ML_IN2 27 //motor4
 
-#define L_ENA 15  //Pin speed motor1
-#define L_ENB 2   //Pin speed motor2
-#define R_ENA 19  //Pin speed motor4
-#define R_ENB 4   //Pin speed motor3
+#define M1_ENA 15  //Pin speed motor1
+#define M2_ENB 2   //Pin speed motor2
+#define M3_ENB 4   //Pin speed motor3
+#define M4_ENA 19  //Pin speed motor4
 
 #define L_LED 16  // Left LED
 #define R_LED 17  // Right LED
