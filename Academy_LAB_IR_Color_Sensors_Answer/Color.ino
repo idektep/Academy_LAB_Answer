@@ -33,7 +33,7 @@ void color_sensor() {
 
       Serial.println("Detect red");  //edit here
       delay(300);
-      led_blink();
+      turn_off_led();
       delay(300);
     }
   }
@@ -48,8 +48,11 @@ void color_sensor() {
     //  ╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝    ╚══════╝╚═════╝ ╚═╝   ╚═╝       ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚══════╝
 
     Serial.println("Detect green");  //edit here
-    turn_on_led();
+    led_blink();
     delay(300);
+    forward(300);
+    backward(300);
+    stop(500);
   }
   //-----------------------------------------------------------------------------------------------------------------------------------------------------//
   else if ((new_blue > new_red) && (new_blue > new_green)) {
@@ -62,7 +65,7 @@ void color_sensor() {
     // ╚═════╝ ╚══════╝ ╚═════╝ ╚══════╝    ╚══════╝╚═════╝ ╚═╝   ╚═╝       ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚══════╝
 
     Serial.println("Detect blue");  //edit here
-    turn_off_led();
+    turn_on_led();
     delay(300);
   } 
    //----- Detect white ------//
